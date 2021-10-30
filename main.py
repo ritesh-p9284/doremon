@@ -9,7 +9,7 @@ def my_goto(x, y):
     goto(x, y)
     pendown()
 
-# 眼睛
+
 def eyes():
     fillcolor("#ffffff")
     begin_fill()
@@ -29,7 +29,7 @@ def eyes():
     end_fill()
 
 
-# 胡须
+
 def beard():
     my_goto(-32, 135)
     seth(165)
@@ -55,7 +55,7 @@ def beard():
     seth(-13)
     fd(60)
 
-# 嘴巴
+
 def mouth():
     my_goto(5, 148)
     seth(270)
@@ -172,6 +172,21 @@ def Doraemon():
 
     beard()
 
+
+    my_goto(0, 0)
+    seth(0)
+    penup()
+    circle(150, 50)
+    pendown()
+    seth(30)
+    fd(40)
+    seth(70)
+    circle(-30, 270)
+
+
+    fillcolor('#00a0de')
+    begin_fill()
+
     seth(230)
     fd(80)
     seth(90)
@@ -179,7 +194,7 @@ def Doraemon():
     seth(-89)
     circle(-1000, 10)
 
-    # print(pos())
+
 
     seth(180)
     fd(70)
@@ -188,7 +203,7 @@ def Doraemon():
     seth(180)
     fd(70)
 
-    # print(pos())
+
     seth(100)
     circle(-1000, 9)
 
@@ -197,7 +212,8 @@ def Doraemon():
     seth(230)
     fd(40)
 
-    # print(pos())
+
+
 
     circle(-30, 230)
     seth(45)
@@ -214,11 +230,13 @@ def Doraemon():
     fd(40)
     end_fill()
 
+
     seth(70)
     fillcolor('#ffffff')
     begin_fill()
     circle(-30)
     end_fill()
+
 
     my_goto(103.74, -182.59)
     seth(0)
@@ -242,12 +260,14 @@ def Doraemon():
     fd(10)
     end_fill()
 
+
     my_goto(-133.97, -91.81)
     seth(50)
     fillcolor('#ffffff')
     begin_fill()
     circle(30)
     end_fill()
+
 
     my_goto(-103.42, 15.09)
     seth(0)
@@ -265,6 +285,7 @@ def Doraemon():
     seth(0)
     fd(70)
 
+
     my_goto(-103.42, 15.09)
     fd(90)
     seth(70)
@@ -280,7 +301,7 @@ def Doraemon():
     seth(10)
     circle(-100, 22)
     circle(-2, 180)
-    seth(180 - 10)
+    seth(180-10)
     circle(100, 22)
     end_fill()
     goto(-13.42, 15.09)
@@ -291,28 +312,16 @@ def Doraemon():
     dot(10)
     my_goto(0, -150)
 
+
     black_eyes()
 
-
 if __name__ == '__main__':
-    screensize(800, 600, "#f0f0f0")
+    screensize(800,600, "#f0f0f0")
     pensize(3)
     speed(9)
     Doraemon()
     my_goto(100, -300)
     write('by ritesh', font=("Bradley Hand ITC", 30, "bold"))
     mainloop()
-    my_goto(0, 0)
-    seth(0)
-    penup()
-    circle(150, 50)
-    pendown()
-    seth(30)
-    fd(40)
-    seth(70)
-    circle(-30, 270)
 
-
-    fillcolor('#00a0de')
-    begin_fill()
 
